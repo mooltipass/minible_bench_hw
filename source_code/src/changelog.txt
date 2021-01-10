@@ -1,0 +1,163 @@
+Todo:
+- shortcut to generate random password in device
+- bytes in eeprom to set shortcuts?
+
+V1.2:
+- added option to display security hashes to the user before and after card unlock (configurable by settings)
+- adding an "_unlock_" service to enable computer lock/unlock feature (configurable by settings)
+- added function to randomize the PIN displayed upon card insertion (configurable by settings)
+- added a "user db change number" updated upon db changes, to make sync notifications
+- added new command to know how many free slots for new users there are
+- handleSmartcardRemoved() call at the end of user erase routine
+- do not prompt for change password when adding new credential
+- mini: implemented click + scroll for faster cred. browsing
+- added "SE" to vendor id string, required by USB spec
+- changed USB keyboard Usage Maximum to allow win key
+- allowing by default credentials cancel requests
+- copying CPZ during card cloning process
+- display flip based on accelerometer
+- USB command to lock the mini
+- get/set description commands
+- back functionality on mini
+
+V1.1:
+- post-indiegogo firmware
+- get description command
+- fixed user request cancelling bug
+- add adjustable delay after manual typing
+- mini: parameter in eeprom to control brightness
+- updating date created/used field on child node update
+- removed left out pixels in login menu (tiny bug)
+- boolean in eeprom to prevent credentials LUT populating
+- allow the get_login command to already specify the login
+- allow pin entering from usb after user approval, last resort for broken screens
+- eeprom values to allow customization of key sent after login AND password manual entry
+- in card ISR, do not call handleSmartcardRemoved() but removeFunctionSMC() & clearSmartCardInsertedUnlocked() to only set protection bools (aes state reset in main())
+
+V1: 
+- new user tutorial
+- timeout on pin entering screen
+- same timeout for all user interractions
+- setting digit to 0 when going back in pin entering
+
+RC6:
+- changes in login menu presentation following beta testers comments
+- truncate indexes checked for all menus
+- new bundle required
+
+RC5:
+- possible Mooltipass freeze bug solved when inserting/removing smartcard
+- possibility to cancel user input request boolean in eeprom
+- lower casing all service names
+- additional checks in read fav
+- looping around in login menu
+
+RC4:
+- no screen flipping when no credentials for given service
+- informing user of no credentials for given service
+- LEDS off when displaying information
+- flashy screen when adding service
+- ghost touches problem solved
+- size optimizations...
+- new bundle required
+
+RC3:
+- more information on the cloning process - new bundle required!
+- card cpz needs to be presented to allow unknown card adding
+- pin handling functions only use pointers to pin variable
+- no need to remove card when adding an unknown card
+- different messages for pin entering
+- offer user to not erase card
+
+RC2:
+- speed improvement: look for free node starting after the taken one
+- possibility to change charge time by setting param in eeprom
+- solved bug when exciting management mode with screen saver
+- individual control of the wheel keys pulse scl
+- displaying service for fav & login menu
+- pushed due to delay to publish RC1
+
+RC1:
+- no service / login confirmation screen when selecting a service that only has one login in the login menu
+- extra slot in eeprom for bootloader backup key
+- usbSendMessage functions always take cmds now
+- sending tab after login sending via HID
+
+v0.9:
+- reserved 25 bytes at the end of the eeprom for UID storage & bootkey copy
+- USB command set values changed to optimize space... new app needed!
+- changed reserved IDs to 128, new bundle required!
+- user approval for fw and bundle update
+- different information strings...
+- implemented UID request protocol
+- data storage implemented
+- new touch inhibit logic
+
+v0.8:
+- not using USB SOF for USB timeouts
+- USB suspend detection to lock device
+- removing checkbook_24 from bundle - new bundle required!
+- using the NAKINI flag to know when data write from host is done
+- added several functions for memory import/export
+- created / last used dates implemented
+- write node function bugs resolved
+- adding several keyboards
+- screensaver
+
+v0.7:
+- implemented a LUT for faster login search
+- added lock timeout bool & delay
+- pin required for memory export
+- put in address 0 in user parameter in eeprom a key for parameter init
+- storing touch sensing parameters in eeprom
+- inhibiting touch inputs for the first 3 seconds after boot to reset touch sensing settings via USB if necessary
+- Mooltipass offline mode
+- added strings, new bundle required!
+- migrated call to low level receiving usb functions to usb_cmd_parser.c
+- Mooltipass will return CMD_PIN_UNLOCKING_SC if the user is entering his PIN
+- added electrical & fuse check
+- added functional test in main firmware, will be run if bootkey isn't correct
+
+v0.6:
+- new strings, new bundle required
+- set/get parameters corrected
+- set/get username/password corrected
+- displaying username on card unlock if set
+- don't output login via login menu if it is not set
+- solving sendHid bug if data is a multiple of export block
+
+v0.5 (considered as pre-stable):
+- user needs to erase his Mooltipass as changes are made in the flash eeprom storage system
+- changed the boot variable, MP will take a while to boot
+- 34 bytes reserved for Mooltipass settings in eeprom
+- various display improvements > new bundle needed
+- keyboard LUT moved to external flash
+
+v0.4:
+- migrating to block import/export mode
+- media import doesn't need confirmation for beta testers
+- login selection screen implemented
+- timeout for favorite and login selection
+- no stored favorites information screen
+
+v0.3:
+- pressing left on multiple credential screen will return
+- beta testers version: inserting the smartcard with the chip facing the right way will make the MP normally boot
+- reserving 1024 bytes in the beginning of the graphics storage to store strings
+- because of this, users have to upload a new bundle file
+- we now display how many pin tries are left
+- favorite menu implemented
+- going to sleep screen
+
+v0.2: 
+- changes require user to erase their current smartcards before updating firmwares and reset the pin to 0xF0F0
+- login and passwords can't be reimported due to flash layout change
+- userhandling.c/h split into dedicated files in the LOGIC folder
+- complete rework of the node management code
+- blocking functions for reading another user's parent/child node
+- read/write parent/child blocks functions (address, pointer)
+- complete rewrite of CPZ <> NONCE <> UID eeprom logic
+- change of bootkey to erase flash & eeprom at next boot
+- erase functionality implemented: will erase SMC<>UID entries for a given UID + all user related data in Flash
+- implemented isSmartCardAbsent() to report smartcard absence
+- every screen is now interrupted at smartcard removal

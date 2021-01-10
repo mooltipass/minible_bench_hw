@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name limpkins_lib)(type Legacy)(uri C:/Users/limpkin/Dropbox/Projets/_kicad_lib/limpkins_lib.mod)(options "")(descr ""))
+  (lib (name _kicad4_lib)(type KiCad)(uri C:/Users/limpkin/Dropbox/Projets/_kicad4_lib.pretty)(options "")(descr ""))
+  (lib (name footprints)(type KiCad)(uri ${KIPRJMOD}/footprints)(options "")(descr ""))
+)

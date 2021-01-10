@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name limpkins_lib)(type Legacy)(uri C:/Users/limpkin/Dropbox/Projets/_kicad_lib/limpkins_lib.lib)(options "")(descr ""))
+  (lib (name limpkin)(type Legacy)(uri C:/Users/limpkin/Dropbox/Projets/_kicad4_lib.pretty/_kicad4_lib/limpkin.lib)(options "")(descr ""))
+  (lib (name prog_rig-rescue)(type Legacy)(uri ${KIPRJMOD}/prog_rig-rescue.lib)(options "")(descr ""))
+  (lib (name mini_ble)(type Legacy)(uri ${KIPRJMOD}/symbols/mini_ble.lib)(options "")(descr ""))
+)

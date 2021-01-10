@@ -1,0 +1,1872 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 7
+Title "Individual Programming Socket"
+Date "2016-10-23"
+Rev "A"
+Comp "Stephan Electronics"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 2500 4250 0    60   Input ~ 0
+A0
+Text HLabel 2500 4150 0    60   Input ~ 0
+A1
+Text HLabel 2500 4050 0    60   Input ~ 0
+A2
+Text HLabel 2500 3950 0    60   Input ~ 0
+INT
+Text HLabel 2500 3750 0    60   Input ~ 0
+I2C_SCL
+Text HLabel 2500 3850 0    60   Input ~ 0
+I2C_SDA
+$Comp
+L limpkin:PCA9554 U18
+U 1 1 58127AB0
+P 3350 4000
+AR Path="/580DB063/58127AB0" Ref="U18"  Part="1" 
+AR Path="/580CC86A/58127AB0" Ref="U6"  Part="1" 
+AR Path="/580D7E0F/58127AB0" Ref="U9"  Part="1" 
+AR Path="/580D992D/58127AB0" Ref="U12"  Part="1" 
+AR Path="/580DA3EF/58127AB0" Ref="U15"  Part="1" 
+AR Path="/580F02C3/58127AB0" Ref="U21"  Part="1" 
+AR Path="/580F225D/58127AB0" Ref="U24"  Part="1" 
+AR Path="/580FD905/58127AB0" Ref="U27"  Part="1" 
+F 0 "U6" H 3100 4450 60  0000 C CNN
+F 1 "PCA9554" H 3250 3550 60  0000 C CNN
+F 2 "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm" H 3350 4000 60  0001 C CNN
+F 3 "" H 3350 4000 60  0001 C CNN
+F 4 "https://www.digikey.com/products/en?keywords=568-11910-1-ND" H 3350 4000 50  0001 C CNN "Field4"
+	1    3350 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0170
+U 1 1 58127AE7
+P 2750 3550
+AR Path="/580DB063/58127AE7" Ref="#PWR0170"  Part="1" 
+AR Path="/580CC86A/58127AE7" Ref="#PWR054"  Part="1" 
+AR Path="/580D7E0F/58127AE7" Ref="#PWR083"  Part="1" 
+AR Path="/580D992D/58127AE7" Ref="#PWR0112"  Part="1" 
+AR Path="/580DA3EF/58127AE7" Ref="#PWR0141"  Part="1" 
+AR Path="/580F02C3/58127AE7" Ref="#PWR0199"  Part="1" 
+AR Path="/580F225D/58127AE7" Ref="#PWR0228"  Part="1" 
+AR Path="/580FD905/58127AE7" Ref="#PWR0257"  Part="1" 
+F 0 "#PWR0199" H 2750 3400 50  0001 C CNN
+F 1 "+5V" H 2750 3690 50  0000 C CNN
+F 2 "" H 2750 3550 50  0000 C CNN
+F 3 "" H 2750 3550 50  0000 C CNN
+	1    2750 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0171
+U 1 1 58127B05
+P 2750 4450
+AR Path="/580DB063/58127B05" Ref="#PWR0171"  Part="1" 
+AR Path="/580CC86A/58127B05" Ref="#PWR055"  Part="1" 
+AR Path="/580D7E0F/58127B05" Ref="#PWR084"  Part="1" 
+AR Path="/580D992D/58127B05" Ref="#PWR0113"  Part="1" 
+AR Path="/580DA3EF/58127B05" Ref="#PWR0142"  Part="1" 
+AR Path="/580F02C3/58127B05" Ref="#PWR0200"  Part="1" 
+AR Path="/580F225D/58127B05" Ref="#PWR0229"  Part="1" 
+AR Path="/580FD905/58127B05" Ref="#PWR0258"  Part="1" 
+F 0 "#PWR0200" H 2750 4200 50  0001 C CNN
+F 1 "GND" H 2750 4300 50  0000 C CNN
+F 2 "" H 2750 4450 50  0000 C CNN
+F 3 "" H 2750 4450 50  0000 C CNN
+	1    2750 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C74
+U 1 1 58127BA4
+P 3200 3100
+AR Path="/580DB063/58127BA4" Ref="C74"  Part="1" 
+AR Path="/580CC86A/58127BA4" Ref="C22"  Part="1" 
+AR Path="/580D7E0F/58127BA4" Ref="C35"  Part="1" 
+AR Path="/580D992D/58127BA4" Ref="C48"  Part="1" 
+AR Path="/580DA3EF/58127BA4" Ref="C61"  Part="1" 
+AR Path="/580F02C3/58127BA4" Ref="C87"  Part="1" 
+AR Path="/580F225D/58127BA4" Ref="C100"  Part="1" 
+AR Path="/580FD905/58127BA4" Ref="C113"  Part="1" 
+F 0 "C22" H 3225 3200 50  0000 L CNN
+F 1 "100nF" H 3225 3000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3238 2950 50  0001 C CNN
+F 3 "" H 3200 3100 50  0000 C CNN
+F 4 "https://www.digikey.com/products/en?keywords=%201276-1000-1-ND%20" H 3200 3100 50  0001 C CNN "Field4"
+	1    3200 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C75
+U 1 1 58127BE5
+P 3500 3100
+AR Path="/580DB063/58127BE5" Ref="C75"  Part="1" 
+AR Path="/580CC86A/58127BE5" Ref="C23"  Part="1" 
+AR Path="/580D7E0F/58127BE5" Ref="C36"  Part="1" 
+AR Path="/580D992D/58127BE5" Ref="C49"  Part="1" 
+AR Path="/580DA3EF/58127BE5" Ref="C62"  Part="1" 
+AR Path="/580F02C3/58127BE5" Ref="C88"  Part="1" 
+AR Path="/580F225D/58127BE5" Ref="C101"  Part="1" 
+AR Path="/580FD905/58127BE5" Ref="C114"  Part="1" 
+F 0 "C23" H 3525 3200 50  0000 L CNN
+F 1 "10uF" H 3525 3000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3538 2950 50  0001 C CNN
+F 3 "" H 3500 3100 50  0000 C CNN
+F 4 "https://www.digikey.com/products/en?keywords=490-5523-1-ND" H 3500 3100 50  0001 C CNN "Field4"
+	1    3500 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0172
+U 1 1 58127C37
+P 3200 3300
+AR Path="/580DB063/58127C37" Ref="#PWR0172"  Part="1" 
+AR Path="/580CC86A/58127C37" Ref="#PWR056"  Part="1" 
+AR Path="/580D7E0F/58127C37" Ref="#PWR085"  Part="1" 
+AR Path="/580D992D/58127C37" Ref="#PWR0114"  Part="1" 
+AR Path="/580DA3EF/58127C37" Ref="#PWR0143"  Part="1" 
+AR Path="/580F02C3/58127C37" Ref="#PWR0201"  Part="1" 
+AR Path="/580F225D/58127C37" Ref="#PWR0230"  Part="1" 
+AR Path="/580FD905/58127C37" Ref="#PWR0259"  Part="1" 
+F 0 "#PWR0201" H 3200 3050 50  0001 C CNN
+F 1 "GND" H 3200 3150 50  0000 C CNN
+F 2 "" H 3200 3300 50  0000 C CNN
+F 3 "" H 3200 3300 50  0000 C CNN
+	1    3200 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0173
+U 1 1 58127C4B
+P 3500 3300
+AR Path="/580DB063/58127C4B" Ref="#PWR0173"  Part="1" 
+AR Path="/580CC86A/58127C4B" Ref="#PWR057"  Part="1" 
+AR Path="/580D7E0F/58127C4B" Ref="#PWR086"  Part="1" 
+AR Path="/580D992D/58127C4B" Ref="#PWR0115"  Part="1" 
+AR Path="/580DA3EF/58127C4B" Ref="#PWR0144"  Part="1" 
+AR Path="/580F02C3/58127C4B" Ref="#PWR0202"  Part="1" 
+AR Path="/580F225D/58127C4B" Ref="#PWR0231"  Part="1" 
+AR Path="/580FD905/58127C4B" Ref="#PWR0260"  Part="1" 
+F 0 "#PWR0202" H 3500 3050 50  0001 C CNN
+F 1 "GND" H 3500 3150 50  0000 C CNN
+F 2 "" H 3500 3300 50  0000 C CNN
+F 3 "" H 3500 3300 50  0000 C CNN
+	1    3500 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0174
+U 1 1 58127C5F
+P 3200 2900
+AR Path="/580DB063/58127C5F" Ref="#PWR0174"  Part="1" 
+AR Path="/580CC86A/58127C5F" Ref="#PWR058"  Part="1" 
+AR Path="/580D7E0F/58127C5F" Ref="#PWR087"  Part="1" 
+AR Path="/580D992D/58127C5F" Ref="#PWR0116"  Part="1" 
+AR Path="/580DA3EF/58127C5F" Ref="#PWR0145"  Part="1" 
+AR Path="/580F02C3/58127C5F" Ref="#PWR0203"  Part="1" 
+AR Path="/580F225D/58127C5F" Ref="#PWR0232"  Part="1" 
+AR Path="/580FD905/58127C5F" Ref="#PWR0261"  Part="1" 
+F 0 "#PWR0203" H 3200 2750 50  0001 C CNN
+F 1 "+5V" H 3200 3040 50  0000 C CNN
+F 2 "" H 3200 2900 50  0000 C CNN
+F 3 "" H 3200 2900 50  0000 C CNN
+	1    3200 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0175
+U 1 1 58127C73
+P 3500 2900
+AR Path="/580DB063/58127C73" Ref="#PWR0175"  Part="1" 
+AR Path="/580CC86A/58127C73" Ref="#PWR059"  Part="1" 
+AR Path="/580D7E0F/58127C73" Ref="#PWR088"  Part="1" 
+AR Path="/580D992D/58127C73" Ref="#PWR0117"  Part="1" 
+AR Path="/580DA3EF/58127C73" Ref="#PWR0146"  Part="1" 
+AR Path="/580F02C3/58127C73" Ref="#PWR0204"  Part="1" 
+AR Path="/580F225D/58127C73" Ref="#PWR0233"  Part="1" 
+AR Path="/580FD905/58127C73" Ref="#PWR0262"  Part="1" 
+F 0 "#PWR0204" H 3500 2750 50  0001 C CNN
+F 1 "+5V" H 3500 3040 50  0000 C CNN
+F 2 "" H 3500 2900 50  0000 C CNN
+F 3 "" H 3500 2900 50  0000 C CNN
+	1    3500 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L prog_rig-rescue:LED D38
+U 1 1 58127DAB
+P 2500 1800
+AR Path="/580DB063/58127DAB" Ref="D38"  Part="1" 
+AR Path="/580CC86A/58127DAB" Ref="D2"  Part="1" 
+AR Path="/580D7E0F/58127DAB" Ref="D11"  Part="1" 
+AR Path="/580D992D/58127DAB" Ref="D20"  Part="1" 
+AR Path="/580DA3EF/58127DAB" Ref="D29"  Part="1" 
+AR Path="/580F02C3/58127DAB" Ref="D47"  Part="1" 
+AR Path="/580F225D/58127DAB" Ref="D56"  Part="1" 
+AR Path="/580FD905/58127DAB" Ref="D65"  Part="1" 
+F 0 "D2" H 2500 1900 50  0000 C CNN
+F 1 "LED" H 2500 1700 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 2500 1800 50  0001 C CNN
+F 3 "" H 2500 1800 50  0000 C CNN
+F 4 "https://www.digikey.com/products/en?keywords=160-1405-1-ND%20" H 2500 1800 50  0001 C CNN "Field4"
+	1    2500 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R60
+U 1 1 58127E40
+P 2500 1400
+AR Path="/580DB063/58127E40" Ref="R60"  Part="1" 
+AR Path="/580CC86A/58127E40" Ref="R8"  Part="1" 
+AR Path="/580D7E0F/58127E40" Ref="R21"  Part="1" 
+AR Path="/580D992D/58127E40" Ref="R34"  Part="1" 
+AR Path="/580DA3EF/58127E40" Ref="R47"  Part="1" 
+AR Path="/580F02C3/58127E40" Ref="R73"  Part="1" 
+AR Path="/580F225D/58127E40" Ref="R86"  Part="1" 
+AR Path="/580FD905/58127E40" Ref="R99"  Part="1" 
+F 0 "R8" V 2580 1400 50  0000 C CNN
+F 1 "1k" V 2500 1400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2430 1400 50  0001 C CNN
+F 3 "" H 2500 1400 50  0000 C CNN
+F 4 "https://www.digikey.com/products/en?keywords=311-1.00KHRCT-ND" V 2500 1400 50  0001 C CNN "Field4"
+	1    2500 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0176
+U 1 1 58127E7A
+P 2700 1150
+AR Path="/580DB063/58127E7A" Ref="#PWR0176"  Part="1" 
+AR Path="/580CC86A/58127E7A" Ref="#PWR060"  Part="1" 
+AR Path="/580D7E0F/58127E7A" Ref="#PWR089"  Part="1" 
+AR Path="/580D992D/58127E7A" Ref="#PWR0118"  Part="1" 
+AR Path="/580DA3EF/58127E7A" Ref="#PWR0147"  Part="1" 
+AR Path="/580F02C3/58127E7A" Ref="#PWR0205"  Part="1" 
+AR Path="/580F225D/58127E7A" Ref="#PWR0234"  Part="1" 
+AR Path="/580FD905/58127E7A" Ref="#PWR0263"  Part="1" 
+F 0 "#PWR0205" H 2700 1000 50  0001 C CNN
+F 1 "+5V" H 2700 1290 50  0000 C CNN
+F 2 "" H 2700 1150 50  0000 C CNN
+F 3 "" H 2700 1150 50  0000 C CNN
+	1    2700 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R61
+U 1 1 58127ED8
+P 2700 1400
+AR Path="/580DB063/58127ED8" Ref="R61"  Part="1" 
+AR Path="/580CC86A/58127ED8" Ref="R9"  Part="1" 
+AR Path="/580D7E0F/58127ED8" Ref="R22"  Part="1" 
+AR Path="/580D992D/58127ED8" Ref="R35"  Part="1" 
+AR Path="/580DA3EF/58127ED8" Ref="R48"  Part="1" 
+AR Path="/580F02C3/58127ED8" Ref="R74"  Part="1" 
+AR Path="/580F225D/58127ED8" Ref="R87"  Part="1" 
+AR Path="/580FD905/58127ED8" Ref="R100"  Part="1" 
+F 0 "R9" V 2780 1400 50  0000 C CNN
+F 1 "1k" V 2700 1400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2630 1400 50  0001 C CNN
+F 3 "" H 2700 1400 50  0000 C CNN
+F 4 "https://www.digikey.com/products/en?keywords=311-1.00KHRCT-ND" V 2700 1400 50  0001 C CNN "Field4"
+	1    2700 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R62
+U 1 1 58127EFE
+P 2900 1400
+AR Path="/580DB063/58127EFE" Ref="R62"  Part="1" 
+AR Path="/580CC86A/58127EFE" Ref="R10"  Part="1" 
+AR Path="/580D7E0F/58127EFE" Ref="R23"  Part="1" 
+AR Path="/580D992D/58127EFE" Ref="R36"  Part="1" 
+AR Path="/580DA3EF/58127EFE" Ref="R49"  Part="1" 
+AR Path="/580F02C3/58127EFE" Ref="R75"  Part="1" 
+AR Path="/580F225D/58127EFE" Ref="R88"  Part="1" 
+AR Path="/580FD905/58127EFE" Ref="R101"  Part="1" 
+F 0 "R10" V 2980 1400 50  0000 C CNN
+F 1 "1k" V 2900 1400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2830 1400 50  0001 C CNN
+F 3 "" H 2900 1400 50  0000 C CNN
+F 4 "https://www.digikey.com/products/en?keywords=311-1.00KHRCT-ND" V 2900 1400 50  0001 C CNN "Field4"
+	1    2900 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L prog_rig-rescue:LED D39
+U 1 1 58127F27
+P 2700 1800
+AR Path="/580DB063/58127F27" Ref="D39"  Part="1" 
+AR Path="/580CC86A/58127F27" Ref="D3"  Part="1" 
+AR Path="/580D7E0F/58127F27" Ref="D12"  Part="1" 
+AR Path="/580D992D/58127F27" Ref="D21"  Part="1" 
+AR Path="/580DA3EF/58127F27" Ref="D30"  Part="1" 
+AR Path="/580F02C3/58127F27" Ref="D48"  Part="1" 
+AR Path="/580F225D/58127F27" Ref="D57"  Part="1" 
+AR Path="/580FD905/58127F27" Ref="D66"  Part="1" 
+F 0 "D3" H 2700 1900 50  0000 C CNN
+F 1 "LED" H 2700 1700 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 2700 1800 50  0001 C CNN
+F 3 "" H 2700 1800 50  0000 C CNN
+F 4 "https://www.digikey.com/products/en?keywords=160-1405-1-ND%20" H 2700 1800 50  0001 C CNN "Field4"
+	1    2700 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L prog_rig-rescue:LED D40
+U 1 1 581280AA
+P 2900 1800
+AR Path="/580DB063/581280AA" Ref="D40"  Part="1" 
+AR Path="/580CC86A/581280AA" Ref="D4"  Part="1" 
+AR Path="/580D7E0F/581280AA" Ref="D13"  Part="1" 
+AR Path="/580D992D/581280AA" Ref="D22"  Part="1" 
+AR Path="/580DA3EF/581280AA" Ref="D31"  Part="1" 
+AR Path="/580F02C3/581280AA" Ref="D49"  Part="1" 
+AR Path="/580F225D/581280AA" Ref="D58"  Part="1" 
+AR Path="/580FD905/581280AA" Ref="D67"  Part="1" 
+F 0 "D4" H 2900 1900 50  0000 C CNN
+F 1 "LED" H 2900 1700 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 2900 1800 50  0001 C CNN
+F 3 "" H 2900 1800 50  0000 C CNN
+F 4 "https://www.digikey.com/products/en?keywords=160-1405-1-ND%20" H 2900 1800 50  0001 C CNN "Field4"
+	1    2900 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L prog_rig-rescue:LED D41
+U 1 1 581282B9
+P 3150 1800
+AR Path="/580DB063/581282B9" Ref="D41"  Part="1" 
+AR Path="/580CC86A/581282B9" Ref="D5"  Part="1" 
+AR Path="/580D7E0F/581282B9" Ref="D14"  Part="1" 
+AR Path="/580D992D/581282B9" Ref="D23"  Part="1" 
+AR Path="/580DA3EF/581282B9" Ref="D32"  Part="1" 
+AR Path="/580F02C3/581282B9" Ref="D50"  Part="1" 
+AR Path="/580F225D/581282B9" Ref="D59"  Part="1" 
+AR Path="/580FD905/581282B9" Ref="D68"  Part="1" 
+F 0 "D5" H 3150 1900 50  0000 C CNN
+F 1 "LED" H 3150 1700 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 3150 1800 50  0001 C CNN
+F 3 "" H 3150 1800 50  0000 C CNN
+F 4 "https://www.digikey.com/products/en?keywords=160-1403-1-ND" H 3150 1800 50  0001 C CNN "Field4"
+	1    3150 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R63
+U 1 1 581282BF
+P 3150 1400
+AR Path="/580DB063/581282BF" Ref="R63"  Part="1" 
+AR Path="/580CC86A/581282BF" Ref="R11"  Part="1" 
+AR Path="/580D7E0F/581282BF" Ref="R24"  Part="1" 
+AR Path="/580D992D/581282BF" Ref="R37"  Part="1" 
+AR Path="/580DA3EF/581282BF" Ref="R50"  Part="1" 
+AR Path="/580F02C3/581282BF" Ref="R76"  Part="1" 
+AR Path="/580F225D/581282BF" Ref="R89"  Part="1" 
+AR Path="/580FD905/581282BF" Ref="R102"  Part="1" 
+F 0 "R11" V 3230 1400 50  0000 C CNN
+F 1 "1k" V 3150 1400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 1400 50  0001 C CNN
+F 3 "" H 3150 1400 50  0000 C CNN
+F 4 "https://www.digikey.com/products/en?keywords=311-1.00KHRCT-ND" V 3150 1400 50  0001 C CNN "Field4"
+	1    3150 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0177
+U 1 1 581282C5
+P 3350 1150
+AR Path="/580DB063/581282C5" Ref="#PWR0177"  Part="1" 
+AR Path="/580CC86A/581282C5" Ref="#PWR061"  Part="1" 
+AR Path="/580D7E0F/581282C5" Ref="#PWR090"  Part="1" 
+AR Path="/580D992D/581282C5" Ref="#PWR0119"  Part="1" 
+AR Path="/580DA3EF/581282C5" Ref="#PWR0148"  Part="1" 
+AR Path="/580F02C3/581282C5" Ref="#PWR0206"  Part="1" 
+AR Path="/580F225D/581282C5" Ref="#PWR0235"  Part="1" 
+AR Path="/580FD905/581282C5" Ref="#PWR0264"  Part="1" 
+F 0 "#PWR0206" H 3350 1000 50  0001 C CNN
+F 1 "+5V" H 3350 1290 50  0000 C CNN
+F 2 "" H 3350 1150 50  0000 C CNN
+F 3 "" H 3350 1150 50  0000 C CNN
+	1    3350 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R64
+U 1 1 581282CB
+P 3350 1400
+AR Path="/580DB063/581282CB" Ref="R64"  Part="1" 
+AR Path="/580CC86A/581282CB" Ref="R12"  Part="1" 
+AR Path="/580D7E0F/581282CB" Ref="R25"  Part="1" 
+AR Path="/580D992D/581282CB" Ref="R38"  Part="1" 
+AR Path="/580DA3EF/581282CB" Ref="R51"  Part="1" 
+AR Path="/580F02C3/581282CB" Ref="R77"  Part="1" 
+AR Path="/580F225D/581282CB" Ref="R90"  Part="1" 
+AR Path="/580FD905/581282CB" Ref="R103"  Part="1" 
+F 0 "R12" V 3430 1400 50  0000 C CNN
+F 1 "1k" V 3350 1400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3280 1400 50  0001 C CNN
+F 3 "" H 3350 1400 50  0000 C CNN
+F 4 "https://www.digikey.com/products/en?keywords=311-1.00KHRCT-ND" V 3350 1400 50  0001 C CNN "Field4"
+	1    3350 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R65
+U 1 1 581282D1
+P 3550 1400
+AR Path="/580DB063/581282D1" Ref="R65"  Part="1" 
+AR Path="/580CC86A/581282D1" Ref="R13"  Part="1" 
+AR Path="/580D7E0F/581282D1" Ref="R26"  Part="1" 
+AR Path="/580D992D/581282D1" Ref="R39"  Part="1" 
+AR Path="/580DA3EF/581282D1" Ref="R52"  Part="1" 
+AR Path="/580F02C3/581282D1" Ref="R78"  Part="1" 
+AR Path="/580F225D/581282D1" Ref="R91"  Part="1" 
+AR Path="/580FD905/581282D1" Ref="R104"  Part="1" 
+F 0 "R13" V 3630 1400 50  0000 C CNN
+F 1 "1k" V 3550 1400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3480 1400 50  0001 C CNN
+F 3 "" H 3550 1400 50  0000 C CNN
+F 4 "https://www.digikey.com/products/en?keywords=311-1.00KHRCT-ND" V 3550 1400 50  0001 C CNN "Field4"
+	1    3550 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L prog_rig-rescue:LED D42
+U 1 1 581282D7
+P 3350 1800
+AR Path="/580DB063/581282D7" Ref="D42"  Part="1" 
+AR Path="/580CC86A/581282D7" Ref="D6"  Part="1" 
+AR Path="/580D7E0F/581282D7" Ref="D15"  Part="1" 
+AR Path="/580D992D/581282D7" Ref="D24"  Part="1" 
+AR Path="/580DA3EF/581282D7" Ref="D33"  Part="1" 
+AR Path="/580F02C3/581282D7" Ref="D51"  Part="1" 
+AR Path="/580F225D/581282D7" Ref="D60"  Part="1" 
+AR Path="/580FD905/581282D7" Ref="D69"  Part="1" 
+F 0 "D6" H 3350 1900 50  0000 C CNN
+F 1 "LED" H 3350 1700 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 3350 1800 50  0001 C CNN
+F 3 "" H 3350 1800 50  0000 C CNN
+F 4 "https://www.digikey.com/products/en?keywords=160-1403-1-ND" H 3350 1800 50  0001 C CNN "Field4"
+	1    3350 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L prog_rig-rescue:LED D43
+U 1 1 581282DD
+P 3550 1800
+AR Path="/580DB063/581282DD" Ref="D43"  Part="1" 
+AR Path="/580CC86A/581282DD" Ref="D7"  Part="1" 
+AR Path="/580D7E0F/581282DD" Ref="D16"  Part="1" 
+AR Path="/580D992D/581282DD" Ref="D25"  Part="1" 
+AR Path="/580DA3EF/581282DD" Ref="D34"  Part="1" 
+AR Path="/580F02C3/581282DD" Ref="D52"  Part="1" 
+AR Path="/580F225D/581282DD" Ref="D61"  Part="1" 
+AR Path="/580FD905/581282DD" Ref="D70"  Part="1" 
+F 0 "D7" H 3550 1900 50  0000 C CNN
+F 1 "LED" H 3550 1700 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 3550 1800 50  0001 C CNN
+F 3 "" H 3550 1800 50  0000 C CNN
+F 4 "https://www.digikey.com/products/en?keywords=160-1403-1-ND" H 3550 1800 50  0001 C CNN "Field4"
+	1    3550 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L prog_rig-rescue:LED D44
+U 1 1 581284F2
+P 3800 1800
+AR Path="/580DB063/581284F2" Ref="D44"  Part="1" 
+AR Path="/580CC86A/581284F2" Ref="D8"  Part="1" 
+AR Path="/580D7E0F/581284F2" Ref="D17"  Part="1" 
+AR Path="/580D992D/581284F2" Ref="D26"  Part="1" 
+AR Path="/580DA3EF/581284F2" Ref="D35"  Part="1" 
+AR Path="/580F02C3/581284F2" Ref="D53"  Part="1" 
+AR Path="/580F225D/581284F2" Ref="D62"  Part="1" 
+AR Path="/580FD905/581284F2" Ref="D71"  Part="1" 
+F 0 "D8" H 3800 1900 50  0000 C CNN
+F 1 "LED" H 3800 1700 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 3800 1800 50  0001 C CNN
+F 3 "" H 3800 1800 50  0000 C CNN
+F 4 "https://www.digikey.com/products/en?keywords=160-1404-1-ND" H 3800 1800 50  0001 C CNN "Field4"
+	1    3800 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R66
+U 1 1 581284F8
+P 3800 1400
+AR Path="/580DB063/581284F8" Ref="R66"  Part="1" 
+AR Path="/580CC86A/581284F8" Ref="R14"  Part="1" 
+AR Path="/580D7E0F/581284F8" Ref="R27"  Part="1" 
+AR Path="/580D992D/581284F8" Ref="R40"  Part="1" 
+AR Path="/580DA3EF/581284F8" Ref="R53"  Part="1" 
+AR Path="/580F02C3/581284F8" Ref="R79"  Part="1" 
+AR Path="/580F225D/581284F8" Ref="R92"  Part="1" 
+AR Path="/580FD905/581284F8" Ref="R105"  Part="1" 
+F 0 "R14" V 3880 1400 50  0000 C CNN
+F 1 "1k" V 3800 1400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3730 1400 50  0001 C CNN
+F 3 "" H 3800 1400 50  0000 C CNN
+F 4 "https://www.digikey.com/products/en?keywords=311-1.00KHRCT-ND" V 3800 1400 50  0001 C CNN "Field4"
+	1    3800 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0178
+U 1 1 581284FE
+P 4000 1150
+AR Path="/580DB063/581284FE" Ref="#PWR0178"  Part="1" 
+AR Path="/580CC86A/581284FE" Ref="#PWR062"  Part="1" 
+AR Path="/580D7E0F/581284FE" Ref="#PWR091"  Part="1" 
+AR Path="/580D992D/581284FE" Ref="#PWR0120"  Part="1" 
+AR Path="/580DA3EF/581284FE" Ref="#PWR0149"  Part="1" 
+AR Path="/580F02C3/581284FE" Ref="#PWR0207"  Part="1" 
+AR Path="/580F225D/581284FE" Ref="#PWR0236"  Part="1" 
+AR Path="/580FD905/581284FE" Ref="#PWR0265"  Part="1" 
+F 0 "#PWR0207" H 4000 1000 50  0001 C CNN
+F 1 "+5V" H 4000 1290 50  0000 C CNN
+F 2 "" H 4000 1150 50  0000 C CNN
+F 3 "" H 4000 1150 50  0000 C CNN
+	1    4000 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R68
+U 1 1 58128504
+P 4000 1400
+AR Path="/580DB063/58128504" Ref="R68"  Part="1" 
+AR Path="/580CC86A/58128504" Ref="R16"  Part="1" 
+AR Path="/580D7E0F/58128504" Ref="R29"  Part="1" 
+AR Path="/580D992D/58128504" Ref="R42"  Part="1" 
+AR Path="/580DA3EF/58128504" Ref="R55"  Part="1" 
+AR Path="/580F02C3/58128504" Ref="R81"  Part="1" 
+AR Path="/580F225D/58128504" Ref="R94"  Part="1" 
+AR Path="/580FD905/58128504" Ref="R107"  Part="1" 
+F 0 "R16" V 4080 1400 50  0000 C CNN
+F 1 "1k" V 4000 1400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3930 1400 50  0001 C CNN
+F 3 "" H 4000 1400 50  0000 C CNN
+F 4 "https://www.digikey.com/products/en?keywords=311-1.00KHRCT-ND" V 4000 1400 50  0001 C CNN "Field4"
+	1    4000 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R69
+U 1 1 5812850A
+P 4200 1400
+AR Path="/580DB063/5812850A" Ref="R69"  Part="1" 
+AR Path="/580CC86A/5812850A" Ref="R17"  Part="1" 
+AR Path="/580D7E0F/5812850A" Ref="R30"  Part="1" 
+AR Path="/580D992D/5812850A" Ref="R43"  Part="1" 
+AR Path="/580DA3EF/5812850A" Ref="R56"  Part="1" 
+AR Path="/580F02C3/5812850A" Ref="R82"  Part="1" 
+AR Path="/580F225D/5812850A" Ref="R95"  Part="1" 
+AR Path="/580FD905/5812850A" Ref="R108"  Part="1" 
+F 0 "R17" V 4280 1400 50  0000 C CNN
+F 1 "1k" V 4200 1400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4130 1400 50  0001 C CNN
+F 3 "" H 4200 1400 50  0000 C CNN
+F 4 "https://www.digikey.com/products/en?keywords=311-1.00KHRCT-ND" V 4200 1400 50  0001 C CNN "Field4"
+	1    4200 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L prog_rig-rescue:LED D45
+U 1 1 58128510
+P 4000 1800
+AR Path="/580DB063/58128510" Ref="D45"  Part="1" 
+AR Path="/580CC86A/58128510" Ref="D9"  Part="1" 
+AR Path="/580D7E0F/58128510" Ref="D18"  Part="1" 
+AR Path="/580D992D/58128510" Ref="D27"  Part="1" 
+AR Path="/580DA3EF/58128510" Ref="D36"  Part="1" 
+AR Path="/580F02C3/58128510" Ref="D54"  Part="1" 
+AR Path="/580F225D/58128510" Ref="D63"  Part="1" 
+AR Path="/580FD905/58128510" Ref="D72"  Part="1" 
+F 0 "D9" H 4000 1900 50  0000 C CNN
+F 1 "LED" H 4000 1700 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 4000 1800 50  0001 C CNN
+F 3 "" H 4000 1800 50  0000 C CNN
+F 4 "https://www.digikey.com/products/en?keywords=160-1404-1-ND" H 4000 1800 50  0001 C CNN "Field4"
+	1    4000 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L prog_rig-rescue:LED D46
+U 1 1 58128516
+P 4200 1800
+AR Path="/580DB063/58128516" Ref="D46"  Part="1" 
+AR Path="/580CC86A/58128516" Ref="D10"  Part="1" 
+AR Path="/580D7E0F/58128516" Ref="D19"  Part="1" 
+AR Path="/580D992D/58128516" Ref="D28"  Part="1" 
+AR Path="/580DA3EF/58128516" Ref="D37"  Part="1" 
+AR Path="/580F02C3/58128516" Ref="D55"  Part="1" 
+AR Path="/580F225D/58128516" Ref="D64"  Part="1" 
+AR Path="/580FD905/58128516" Ref="D73"  Part="1" 
+F 0 "D10" H 4200 1900 50  0000 C CNN
+F 1 "LED" H 4200 1700 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 4200 1800 50  0001 C CNN
+F 3 "" H 4200 1800 50  0000 C CNN
+F 4 "https://www.digikey.com/products/en?keywords=160-1404-1-ND" H 4200 1800 50  0001 C CNN "Field4"
+	1    4200 1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2900 1600 2900 1550
+Wire Wire Line
+	2700 1600 2700 1550
+Wire Wire Line
+	2900 1200 2900 1250
+Connection ~ 2700 1200
+Wire Wire Line
+	2500 1200 2500 1250
+Wire Wire Line
+	2500 1200 2700 1200
+Wire Wire Line
+	2700 1150 2700 1200
+Wire Wire Line
+	2500 1600 2500 1550
+Wire Wire Line
+	3200 2900 3200 2950
+Wire Wire Line
+	3500 2950 3500 2900
+Wire Wire Line
+	3500 3300 3500 3250
+Wire Wire Line
+	3200 3300 3200 3250
+Wire Wire Line
+	2750 3650 2750 3550
+Wire Wire Line
+	2850 3650 2750 3650
+Wire Wire Line
+	2500 3750 2850 3750
+Wire Wire Line
+	2850 3850 2500 3850
+Wire Wire Line
+	2500 3950 2850 3950
+Wire Wire Line
+	2850 4050 2500 4050
+Wire Wire Line
+	2500 4150 2850 4150
+Wire Wire Line
+	2850 4250 2500 4250
+Wire Wire Line
+	2750 4350 2850 4350
+Wire Wire Line
+	2750 4450 2750 4350
+Wire Wire Line
+	3550 1600 3550 1550
+Wire Wire Line
+	3350 1600 3350 1550
+Wire Wire Line
+	3550 1200 3550 1250
+Connection ~ 3350 1200
+Wire Wire Line
+	3150 1200 3150 1250
+Wire Wire Line
+	3150 1200 3350 1200
+Wire Wire Line
+	3350 1150 3350 1200
+Wire Wire Line
+	3150 1600 3150 1550
+Wire Wire Line
+	4200 1600 4200 1550
+Wire Wire Line
+	4000 1600 4000 1550
+Wire Wire Line
+	4200 1200 4200 1250
+Connection ~ 4000 1200
+Wire Wire Line
+	3800 1200 3800 1250
+Wire Wire Line
+	3800 1200 4000 1200
+Wire Wire Line
+	4000 1150 4000 1200
+Wire Wire Line
+	3800 1600 3800 1550
+Wire Wire Line
+	2900 2100 2900 2000
+Wire Wire Line
+	2050 2100 2500 2100
+Wire Wire Line
+	2500 2100 2500 2000
+Connection ~ 2500 2100
+Wire Wire Line
+	2700 2000 2700 2100
+Connection ~ 2700 2100
+Wire Wire Line
+	2050 2200 3150 2200
+Wire Wire Line
+	3550 2200 3550 2000
+Wire Wire Line
+	3350 2000 3350 2200
+Connection ~ 3350 2200
+Wire Wire Line
+	3150 2000 3150 2200
+Connection ~ 3150 2200
+Wire Wire Line
+	2050 2300 3800 2300
+Wire Wire Line
+	4200 2300 4200 2000
+Wire Wire Line
+	4000 2000 4000 2300
+Connection ~ 4000 2300
+Wire Wire Line
+	3800 2000 3800 2300
+Connection ~ 3800 2300
+Text Label 2050 2100 0    60   ~ 0
+LED1
+Text Label 2050 2200 0    60   ~ 0
+LED2
+Text Label 2050 2300 0    60   ~ 0
+LED3
+$Comp
+L prog_rig-rescue:SW_PUSH SW5
+U 1 1 581296BE
+P 2750 7100
+AR Path="/580DB063/581296BE" Ref="SW5"  Part="1" 
+AR Path="/580CC86A/581296BE" Ref="SW1"  Part="1" 
+AR Path="/580D7E0F/581296BE" Ref="SW2"  Part="1" 
+AR Path="/580D992D/581296BE" Ref="SW3"  Part="1" 
+AR Path="/580DA3EF/581296BE" Ref="SW4"  Part="1" 
+AR Path="/580F02C3/581296BE" Ref="SW6"  Part="1" 
+AR Path="/580F225D/581296BE" Ref="SW7"  Part="1" 
+AR Path="/580FD905/581296BE" Ref="SW8"  Part="1" 
+AR Path="/581296BE" Ref="SW?"  Part="1" 
+F 0 "SW1" H 2900 7210 50  0000 C CNN
+F 1 "SW_PUSH" H 2750 7020 50  0000 C CNN
+F 2 "_kicad4_lib:SWITCH_K12P" H 2750 7100 50  0001 C CNN
+F 3 "" H 2750 7100 50  0000 C CNN
+F 4 "https://www.digikey.com/products/en?keywords=401-1157-ND%20" H 2750 7100 50  0001 C CNN "Field4"
+	1    2750 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 7100 2000 7100
+$Comp
+L power:GND #PWR0179
+U 1 1 581297D1
+P 3100 7150
+AR Path="/580DB063/581297D1" Ref="#PWR0179"  Part="1" 
+AR Path="/580CC86A/581297D1" Ref="#PWR063"  Part="1" 
+AR Path="/580D7E0F/581297D1" Ref="#PWR092"  Part="1" 
+AR Path="/580D992D/581297D1" Ref="#PWR0121"  Part="1" 
+AR Path="/580DA3EF/581297D1" Ref="#PWR0150"  Part="1" 
+AR Path="/580F02C3/581297D1" Ref="#PWR0208"  Part="1" 
+AR Path="/580F225D/581297D1" Ref="#PWR0237"  Part="1" 
+AR Path="/580FD905/581297D1" Ref="#PWR0266"  Part="1" 
+F 0 "#PWR0208" H 3100 6900 50  0001 C CNN
+F 1 "GND" H 3100 7000 50  0000 C CNN
+F 2 "" H 3100 7150 50  0000 C CNN
+F 3 "" H 3100 7150 50  0000 C CNN
+	1    3100 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 7150 3100 7100
+Wire Wire Line
+	3100 7100 3050 7100
+Text Label 2000 7100 0    60   ~ 0
+SWITCH
+$Comp
+L Device:C C78
+U 1 1 5812A049
+P 4550 1750
+AR Path="/580DB063/5812A049" Ref="C78"  Part="1" 
+AR Path="/580CC86A/5812A049" Ref="C26"  Part="1" 
+AR Path="/580D7E0F/5812A049" Ref="C39"  Part="1" 
+AR Path="/580D992D/5812A049" Ref="C52"  Part="1" 
+AR Path="/580DA3EF/5812A049" Ref="C65"  Part="1" 
+AR Path="/580F02C3/5812A049" Ref="C91"  Part="1" 
+AR Path="/580F225D/5812A049" Ref="C104"  Part="1" 
+AR Path="/580FD905/5812A049" Ref="C117"  Part="1" 
+F 0 "C26" H 4575 1850 50  0000 L CNN
+F 1 "100nF" H 4575 1650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4588 1600 50  0001 C CNN
+F 3 "" H 4550 1750 50  0000 C CNN
+	1    4550 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0180
+U 1 1 5812A04F
+P 4550 1950
+AR Path="/580DB063/5812A04F" Ref="#PWR0180"  Part="1" 
+AR Path="/580CC86A/5812A04F" Ref="#PWR064"  Part="1" 
+AR Path="/580D7E0F/5812A04F" Ref="#PWR093"  Part="1" 
+AR Path="/580D992D/5812A04F" Ref="#PWR0122"  Part="1" 
+AR Path="/580DA3EF/5812A04F" Ref="#PWR0151"  Part="1" 
+AR Path="/580F02C3/5812A04F" Ref="#PWR0209"  Part="1" 
+AR Path="/580F225D/5812A04F" Ref="#PWR0238"  Part="1" 
+AR Path="/580FD905/5812A04F" Ref="#PWR0267"  Part="1" 
+F 0 "#PWR0209" H 4550 1700 50  0001 C CNN
+F 1 "GND" H 4550 1800 50  0000 C CNN
+F 2 "" H 4550 1950 50  0000 C CNN
+F 3 "" H 4550 1950 50  0000 C CNN
+	1    4550 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0181
+U 1 1 5812A055
+P 4550 1550
+AR Path="/580DB063/5812A055" Ref="#PWR0181"  Part="1" 
+AR Path="/580CC86A/5812A055" Ref="#PWR065"  Part="1" 
+AR Path="/580D7E0F/5812A055" Ref="#PWR094"  Part="1" 
+AR Path="/580D992D/5812A055" Ref="#PWR0123"  Part="1" 
+AR Path="/580DA3EF/5812A055" Ref="#PWR0152"  Part="1" 
+AR Path="/580F02C3/5812A055" Ref="#PWR0210"  Part="1" 
+AR Path="/580F225D/5812A055" Ref="#PWR0239"  Part="1" 
+AR Path="/580FD905/5812A055" Ref="#PWR0268"  Part="1" 
+F 0 "#PWR0210" H 4550 1400 50  0001 C CNN
+F 1 "+5V" H 4550 1690 50  0000 C CNN
+F 2 "" H 4550 1550 50  0000 C CNN
+F 3 "" H 4550 1550 50  0000 C CNN
+	1    4550 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 1550 4550 1600
+Wire Wire Line
+	4550 1950 4550 1900
+$Comp
+L power:+5V #PWR0182
+U 1 1 5812A96E
+P 1950 5800
+AR Path="/580DB063/5812A96E" Ref="#PWR0182"  Part="1" 
+AR Path="/580CC86A/5812A96E" Ref="#PWR066"  Part="1" 
+AR Path="/580D7E0F/5812A96E" Ref="#PWR095"  Part="1" 
+AR Path="/580D992D/5812A96E" Ref="#PWR0124"  Part="1" 
+AR Path="/580DA3EF/5812A96E" Ref="#PWR0153"  Part="1" 
+AR Path="/580F02C3/5812A96E" Ref="#PWR0211"  Part="1" 
+AR Path="/580F225D/5812A96E" Ref="#PWR0240"  Part="1" 
+AR Path="/580FD905/5812A96E" Ref="#PWR0269"  Part="1" 
+F 0 "#PWR0211" H 1950 5650 50  0001 C CNN
+F 1 "+5V" H 1950 5940 50  0000 C CNN
+F 2 "" H 1950 5800 50  0000 C CNN
+F 3 "" H 1950 5800 50  0000 C CNN
+	1    1950 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0183
+U 1 1 5812AAC9
+P 2000 6300
+AR Path="/580DB063/5812AAC9" Ref="#PWR0183"  Part="1" 
+AR Path="/580CC86A/5812AAC9" Ref="#PWR067"  Part="1" 
+AR Path="/580D7E0F/5812AAC9" Ref="#PWR096"  Part="1" 
+AR Path="/580D992D/5812AAC9" Ref="#PWR0125"  Part="1" 
+AR Path="/580DA3EF/5812AAC9" Ref="#PWR0154"  Part="1" 
+AR Path="/580F02C3/5812AAC9" Ref="#PWR0212"  Part="1" 
+AR Path="/580F225D/5812AAC9" Ref="#PWR0241"  Part="1" 
+AR Path="/580FD905/5812AAC9" Ref="#PWR0270"  Part="1" 
+F 0 "#PWR0212" H 2000 6050 50  0001 C CNN
+F 1 "GND" H 2000 6150 50  0000 C CNN
+F 2 "" H 2000 6300 50  0000 C CNN
+F 3 "" H 2000 6300 50  0000 C CNN
+	1    2000 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 6200 2000 6200
+Wire Wire Line
+	2000 6200 2000 6300
+Wire Wire Line
+	2050 5900 1950 5900
+Wire Wire Line
+	1950 5900 1950 5800
+Wire Wire Line
+	2050 6000 1350 6000
+Wire Wire Line
+	2050 6100 1350 6100
+Text Label 1350 6000 0    60   ~ 0
+PSU_EN
+Text Label 1350 6100 0    60   ~ 0
+PSU_FAULT
+Text Label 4400 4350 2    60   ~ 0
+LED1
+Text Label 4400 4250 2    60   ~ 0
+LED2
+Text Label 4400 4150 2    60   ~ 0
+LED3
+Text Label 4400 4050 2    60   ~ 0
+SWITCH
+Text Label 4400 3750 2    60   ~ 0
+PSU_EN
+Text Label 4400 3650 2    60   ~ 0
+PSU_FAULT
+Wire Wire Line
+	2950 5900 3750 5900
+$Comp
+L Device:R R67
+U 1 1 5812C60E
+P 3200 6000
+AR Path="/580DB063/5812C60E" Ref="R67"  Part="1" 
+AR Path="/580CC86A/5812C60E" Ref="R15"  Part="1" 
+AR Path="/580D7E0F/5812C60E" Ref="R28"  Part="1" 
+AR Path="/580D992D/5812C60E" Ref="R41"  Part="1" 
+AR Path="/580DA3EF/5812C60E" Ref="R54"  Part="1" 
+AR Path="/580F02C3/5812C60E" Ref="R80"  Part="1" 
+AR Path="/580F225D/5812C60E" Ref="R93"  Part="1" 
+AR Path="/580FD905/5812C60E" Ref="R106"  Part="1" 
+F 0 "R15" V 3280 6000 50  0000 C CNN
+F 1 "210k" V 3200 6000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3130 6000 50  0001 C CNN
+F 3 "" H 3200 6000 50  0000 C CNN
+F 4 "https://www.digikey.com/products/en?keywords=311-210KHRCT-ND%20" V 3200 6000 50  0001 C CNN "Field4"
+	1    3200 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0184
+U 1 1 5812CB42
+P 3400 6050
+AR Path="/580DB063/5812CB42" Ref="#PWR0184"  Part="1" 
+AR Path="/580CC86A/5812CB42" Ref="#PWR068"  Part="1" 
+AR Path="/580D7E0F/5812CB42" Ref="#PWR097"  Part="1" 
+AR Path="/580D992D/5812CB42" Ref="#PWR0126"  Part="1" 
+AR Path="/580DA3EF/5812CB42" Ref="#PWR0155"  Part="1" 
+AR Path="/580F02C3/5812CB42" Ref="#PWR0213"  Part="1" 
+AR Path="/580F225D/5812CB42" Ref="#PWR0242"  Part="1" 
+AR Path="/580FD905/5812CB42" Ref="#PWR0271"  Part="1" 
+F 0 "#PWR0213" H 3400 5800 50  0001 C CNN
+F 1 "GND" H 3400 5900 50  0000 C CNN
+F 2 "" H 3400 6050 50  0000 C CNN
+F 3 "" H 3400 6050 50  0000 C CNN
+	1    3400 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 6050 3400 6000
+Wire Wire Line
+	3400 6000 3350 6000
+Wire Wire Line
+	3050 6000 2950 6000
+Text Notes 2250 6450 0    60   ~ 0
+121mA < Ilim < 162mA
+$Comp
+L Device:C C77
+U 1 1 5812DFCC
+P 3750 6100
+AR Path="/580DB063/5812DFCC" Ref="C77"  Part="1" 
+AR Path="/580CC86A/5812DFCC" Ref="C25"  Part="1" 
+AR Path="/580D7E0F/5812DFCC" Ref="C38"  Part="1" 
+AR Path="/580D992D/5812DFCC" Ref="C51"  Part="1" 
+AR Path="/580DA3EF/5812DFCC" Ref="C64"  Part="1" 
+AR Path="/580F02C3/5812DFCC" Ref="C90"  Part="1" 
+AR Path="/580F225D/5812DFCC" Ref="C103"  Part="1" 
+AR Path="/580FD905/5812DFCC" Ref="C116"  Part="1" 
+F 0 "C25" H 3775 6200 50  0000 L CNN
+F 1 "1uF" H 3775 6000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3788 5950 50  0001 C CNN
+F 3 "" H 3750 6100 50  0000 C CNN
+F 4 "https://www.digikey.com/products/en?keywords=1276-1019-1-ND%20" H 3750 6100 50  0001 C CNN "Field4"
+	1    3750 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0185
+U 1 1 5812E14A
+P 3750 6300
+AR Path="/580DB063/5812E14A" Ref="#PWR0185"  Part="1" 
+AR Path="/580CC86A/5812E14A" Ref="#PWR069"  Part="1" 
+AR Path="/580D7E0F/5812E14A" Ref="#PWR098"  Part="1" 
+AR Path="/580D992D/5812E14A" Ref="#PWR0127"  Part="1" 
+AR Path="/580DA3EF/5812E14A" Ref="#PWR0156"  Part="1" 
+AR Path="/580F02C3/5812E14A" Ref="#PWR0214"  Part="1" 
+AR Path="/580F225D/5812E14A" Ref="#PWR0243"  Part="1" 
+AR Path="/580FD905/5812E14A" Ref="#PWR0272"  Part="1" 
+F 0 "#PWR0214" H 3750 6050 50  0001 C CNN
+F 1 "GND" H 3750 6150 50  0000 C CNN
+F 2 "" H 3750 6300 50  0000 C CNN
+F 3 "" H 3750 6300 50  0000 C CNN
+	1    3750 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 5950 3750 5900
+Connection ~ 3750 5900
+Wire Wire Line
+	3750 6300 3750 6250
+$Comp
+L Device:C C76
+U 1 1 5812EC17
+P 1000 6000
+AR Path="/580DB063/5812EC17" Ref="C76"  Part="1" 
+AR Path="/580CC86A/5812EC17" Ref="C24"  Part="1" 
+AR Path="/580D7E0F/5812EC17" Ref="C37"  Part="1" 
+AR Path="/580D992D/5812EC17" Ref="C50"  Part="1" 
+AR Path="/580DA3EF/5812EC17" Ref="C63"  Part="1" 
+AR Path="/580F02C3/5812EC17" Ref="C89"  Part="1" 
+AR Path="/580F225D/5812EC17" Ref="C102"  Part="1" 
+AR Path="/580FD905/5812EC17" Ref="C115"  Part="1" 
+F 0 "C24" H 1025 6100 50  0000 L CNN
+F 1 "10uF" H 1025 5900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1038 5850 50  0001 C CNN
+F 3 "" H 1000 6000 50  0000 C CNN
+F 4 "https://www.digikey.com/products/en?keywords=490-5523-1-ND" H 1000 6000 50  0001 C CNN "Field4"
+	1    1000 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0186
+U 1 1 5812EC1D
+P 1000 6200
+AR Path="/580DB063/5812EC1D" Ref="#PWR0186"  Part="1" 
+AR Path="/580CC86A/5812EC1D" Ref="#PWR070"  Part="1" 
+AR Path="/580D7E0F/5812EC1D" Ref="#PWR099"  Part="1" 
+AR Path="/580D992D/5812EC1D" Ref="#PWR0128"  Part="1" 
+AR Path="/580DA3EF/5812EC1D" Ref="#PWR0157"  Part="1" 
+AR Path="/580F02C3/5812EC1D" Ref="#PWR0215"  Part="1" 
+AR Path="/580F225D/5812EC1D" Ref="#PWR0244"  Part="1" 
+AR Path="/580FD905/5812EC1D" Ref="#PWR0273"  Part="1" 
+F 0 "#PWR0215" H 1000 5950 50  0001 C CNN
+F 1 "GND" H 1000 6050 50  0000 C CNN
+F 2 "" H 1000 6200 50  0000 C CNN
+F 3 "" H 1000 6200 50  0000 C CNN
+	1    1000 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0187
+U 1 1 5812EC23
+P 1000 5800
+AR Path="/580DB063/5812EC23" Ref="#PWR0187"  Part="1" 
+AR Path="/580CC86A/5812EC23" Ref="#PWR071"  Part="1" 
+AR Path="/580D7E0F/5812EC23" Ref="#PWR0100"  Part="1" 
+AR Path="/580D992D/5812EC23" Ref="#PWR0129"  Part="1" 
+AR Path="/580DA3EF/5812EC23" Ref="#PWR0158"  Part="1" 
+AR Path="/580F02C3/5812EC23" Ref="#PWR0216"  Part="1" 
+AR Path="/580F225D/5812EC23" Ref="#PWR0245"  Part="1" 
+AR Path="/580FD905/5812EC23" Ref="#PWR0274"  Part="1" 
+F 0 "#PWR0216" H 1000 5650 50  0001 C CNN
+F 1 "+5V" H 1000 5940 50  0000 C CNN
+F 2 "" H 1000 5800 50  0000 C CNN
+F 3 "" H 1000 5800 50  0000 C CNN
+	1    1000 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 5850 1000 5800
+Wire Wire Line
+	1000 6200 1000 6150
+$Comp
+L limpkin:AP2552A U19
+U 1 1 581300B3
+P 2500 6050
+AR Path="/580DB063/581300B3" Ref="U19"  Part="1" 
+AR Path="/580CC86A/581300B3" Ref="U7"  Part="1" 
+AR Path="/580D7E0F/581300B3" Ref="U10"  Part="1" 
+AR Path="/580D992D/581300B3" Ref="U13"  Part="1" 
+AR Path="/580DA3EF/581300B3" Ref="U16"  Part="1" 
+AR Path="/580F02C3/581300B3" Ref="U22"  Part="1" 
+AR Path="/580F225D/581300B3" Ref="U25"  Part="1" 
+AR Path="/580FD905/581300B3" Ref="U28"  Part="1" 
+F 0 "U7" H 2300 6300 60  0000 C CNN
+F 1 "AP2553A" H 2450 5800 60  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 2500 6050 60  0001 C CNN
+F 3 "" H 2500 6050 60  0001 C CNN
+F 4 "https://www.digikey.com/product-detail/en/diodes-incorporated/AP2553AW6-7/AP2553AW6-7DICT-ND/3882116" H 2500 6050 50  0001 C CNN "Field4"
+	1    2500 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 4150 4400 4150
+Wire Wire Line
+	3800 4250 4400 4250
+Wire Wire Line
+	3800 4050 4400 4050
+Wire Wire Line
+	3800 4350 4400 4350
+Wire Wire Line
+	4400 3750 3800 3750
+Wire Wire Line
+	3800 3650 4400 3650
+NoConn ~ 3800 3850
+NoConn ~ 3800 3950
+Wire Wire Line
+	2700 1200 2900 1200
+Wire Wire Line
+	2700 1200 2700 1250
+Wire Wire Line
+	3350 1200 3550 1200
+Wire Wire Line
+	3350 1200 3350 1250
+Wire Wire Line
+	4000 1200 4200 1200
+Wire Wire Line
+	4000 1200 4000 1250
+Wire Wire Line
+	2500 2100 2700 2100
+Wire Wire Line
+	2700 2100 2900 2100
+Wire Wire Line
+	3350 2200 3550 2200
+Wire Wire Line
+	3150 2200 3350 2200
+Wire Wire Line
+	4000 2300 4200 2300
+Wire Wire Line
+	3800 2300 4000 2300
+$Comp
+L limpkins_lib:AP7333-33SAG-7 U8
+U 1 1 5F7BC035
+P 4750 5950
+AR Path="/580CC86A/5F7BC035" Ref="U8"  Part="1" 
+AR Path="/580D7E0F/5F7BC035" Ref="U11"  Part="1" 
+AR Path="/580D992D/5F7BC035" Ref="U14"  Part="1" 
+AR Path="/580DA3EF/5F7BC035" Ref="U17"  Part="1" 
+AR Path="/580DB063/5F7BC035" Ref="U20"  Part="1" 
+AR Path="/580F02C3/5F7BC035" Ref="U23"  Part="1" 
+F 0 "U8" H 4550 6100 60  0000 C CNN
+F 1 "AP7333-33SAG-7" H 4750 5800 60  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4700 5950 60  0001 C CNN
+F 3 "" H 4700 5950 60  0000 C CNN
+F 4 "https://www.digikey.com/product-detail/en/diodes-incorporated/AP7333-33SAG-7/AP7333-33SAG-7DICT-ND/2270852" H 4750 5950 50  0001 C CNN "Field4"
+	1    4750 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5F7BCF41
+P 4100 6100
+AR Path="/580DB063/5F7BCF41" Ref="#PWR0109"  Part="1" 
+AR Path="/580CC86A/5F7BCF41" Ref="#PWR0101"  Part="1" 
+AR Path="/580D7E0F/5F7BCF41" Ref="#PWR0103"  Part="1" 
+AR Path="/580D992D/5F7BCF41" Ref="#PWR0105"  Part="1" 
+AR Path="/580DA3EF/5F7BCF41" Ref="#PWR0107"  Part="1" 
+AR Path="/580F02C3/5F7BCF41" Ref="#PWR0111"  Part="1" 
+AR Path="/580F225D/5F7BCF41" Ref="#PWR?"  Part="1" 
+AR Path="/580FD905/5F7BCF41" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0111" H 4100 5850 50  0001 C CNN
+F 1 "GND" H 4100 5950 50  0000 C CNN
+F 2 "" H 4100 6100 50  0000 C CNN
+F 3 "" H 4100 6100 50  0000 C CNN
+	1    4100 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 6000 4100 6000
+Wire Wire Line
+	4100 6000 4100 6100
+Wire Wire Line
+	3750 5900 4200 5900
+$Comp
+L Device:C C31
+U 1 1 5F7C169B
+P 5350 6100
+AR Path="/580DB063/5F7C169B" Ref="C31"  Part="1" 
+AR Path="/580CC86A/5F7C169B" Ref="C27"  Part="1" 
+AR Path="/580D7E0F/5F7C169B" Ref="C28"  Part="1" 
+AR Path="/580D992D/5F7C169B" Ref="C29"  Part="1" 
+AR Path="/580DA3EF/5F7C169B" Ref="C30"  Part="1" 
+AR Path="/580F02C3/5F7C169B" Ref="C32"  Part="1" 
+AR Path="/580F225D/5F7C169B" Ref="C?"  Part="1" 
+AR Path="/580FD905/5F7C169B" Ref="C?"  Part="1" 
+F 0 "C27" H 5375 6200 50  0000 L CNN
+F 1 "1uF" H 5375 6000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5388 5950 50  0001 C CNN
+F 3 "" H 5350 6100 50  0000 C CNN
+F 4 "https://www.digikey.com/products/en?keywords=1276-1019-1-ND%20" H 5350 6100 50  0001 C CNN "Field4"
+	1    5350 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5F7C2387
+P 5350 6300
+AR Path="/580DB063/5F7C2387" Ref="#PWR0110"  Part="1" 
+AR Path="/580CC86A/5F7C2387" Ref="#PWR0102"  Part="1" 
+AR Path="/580D7E0F/5F7C2387" Ref="#PWR0104"  Part="1" 
+AR Path="/580D992D/5F7C2387" Ref="#PWR0106"  Part="1" 
+AR Path="/580DA3EF/5F7C2387" Ref="#PWR0108"  Part="1" 
+AR Path="/580F02C3/5F7C2387" Ref="#PWR0130"  Part="1" 
+AR Path="/580F225D/5F7C2387" Ref="#PWR?"  Part="1" 
+AR Path="/580FD905/5F7C2387" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0130" H 5350 6050 50  0001 C CNN
+F 1 "GND" H 5350 6150 50  0000 C CNN
+F 2 "" H 5350 6300 50  0000 C CNN
+F 3 "" H 5350 6300 50  0000 C CNN
+	1    5350 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 6300 5350 6250
+Wire Wire Line
+	5250 5900 5350 5900
+Wire Wire Line
+	5350 5900 5350 5950
+Wire Wire Line
+	5350 5900 6150 5900
+Connection ~ 5350 5900
+Text Label 6150 5900 2    60   ~ 0
+3V3_SOCKET
+$Comp
+L mini_ble:SAMD21G18A-MU U24
+U 1 1 5F7D270C
+P 8600 2350
+AR Path="/580CC86A/5F7D270C" Ref="U24"  Part="1" 
+AR Path="/580D7E0F/5F7D270C" Ref="U25"  Part="1" 
+AR Path="/580D992D/5F7D270C" Ref="U26"  Part="1" 
+AR Path="/580DA3EF/5F7D270C" Ref="U27"  Part="1" 
+AR Path="/580DB063/5F7D270C" Ref="U28"  Part="1" 
+AR Path="/580F02C3/5F7D270C" Ref="U29"  Part="1" 
+F 0 "U24" H 6950 4000 50  0000 C CNN
+F 1 "SAMD21G18A-MU" H 7200 700 50  0000 C CNN
+F 2 "footprints:QFN-48(56)BT-0.5-01" H 8600 1200 50  0001 C CIN
+F 3 "http://www.atmel.com/Images/Atmel-42129-SAM-D20_Datasheet.pdf" H 8600 2600 50  0001 C CNN
+	1    8600 2350
+	1    0    0    -1  
+$EndComp
+Text Label 5550 900  0    60   ~ 0
+3V3_SOCKET
+$Comp
+L Device:C C?
+U 1 1 5F7F1C8F
+P 6350 1650
+AR Path="/5F7F1C8F" Ref="C?"  Part="1" 
+AR Path="/580CC86A/5F7F1C8F" Ref="C41"  Part="1" 
+AR Path="/580D7E0F/5F7F1C8F" Ref="C46"  Part="1" 
+AR Path="/580D992D/5F7F1C8F" Ref="C56"  Part="1" 
+AR Path="/580DA3EF/5F7F1C8F" Ref="C66"  Part="1" 
+AR Path="/580DB063/5F7F1C8F" Ref="C71"  Part="1" 
+AR Path="/580F02C3/5F7F1C8F" Ref="C81"  Part="1" 
+F 0 "C41" H 6375 1750 50  0000 L CNN
+F 1 "1uF" H 6375 1550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6388 1500 50  0001 C CNN
+F 3 "" H 6350 1650 50  0000 C CNN
+F 4 "https://www.digikey.com/products/en?keywords=1276-1019-1-ND%20" H 6350 1650 50  0001 C CNN "Field4"
+	1    6350 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C70
+U 1 1 5F7F3C86
+P 6150 1100
+AR Path="/580DB063/5F7F3C86" Ref="C70"  Part="1" 
+AR Path="/580CC86A/5F7F3C86" Ref="C40"  Part="1" 
+AR Path="/580D7E0F/5F7F3C86" Ref="C45"  Part="1" 
+AR Path="/580D992D/5F7F3C86" Ref="C55"  Part="1" 
+AR Path="/580DA3EF/5F7F3C86" Ref="C60"  Part="1" 
+AR Path="/580F02C3/5F7F3C86" Ref="C80"  Part="1" 
+AR Path="/580F225D/5F7F3C86" Ref="C?"  Part="1" 
+AR Path="/580FD905/5F7F3C86" Ref="C?"  Part="1" 
+F 0 "C40" H 6175 1200 50  0000 L CNN
+F 1 "100nF" H 6175 1000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6188 950 50  0001 C CNN
+F 3 "" H 6150 1100 50  0000 C CNN
+	1    6150 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0229
+U 1 1 5F7F596E
+P 6350 1800
+AR Path="/580DB063/5F7F596E" Ref="#PWR0229"  Part="1" 
+AR Path="/580CC86A/5F7F596E" Ref="#PWR0131"  Part="1" 
+AR Path="/580D7E0F/5F7F596E" Ref="#PWR0160"  Part="1" 
+AR Path="/580D992D/5F7F596E" Ref="#PWR0189"  Part="1" 
+AR Path="/580DA3EF/5F7F596E" Ref="#PWR0218"  Part="1" 
+AR Path="/580F02C3/5F7F596E" Ref="#PWR0240"  Part="1" 
+AR Path="/580F225D/5F7F596E" Ref="#PWR?"  Part="1" 
+AR Path="/580FD905/5F7F596E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0240" H 6350 1550 50  0001 C CNN
+F 1 "GND" H 6350 1650 50  0000 C CNN
+F 2 "" H 6350 1800 50  0000 C CNN
+F 3 "" H 6350 1800 50  0000 C CNN
+	1    6350 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 1400 6350 1400
+Wire Wire Line
+	6350 1400 6350 1500
+$Comp
+L Device:C C69
+U 1 1 5F7FCEBF
+P 5850 1100
+AR Path="/580DB063/5F7FCEBF" Ref="C69"  Part="1" 
+AR Path="/580CC86A/5F7FCEBF" Ref="C34"  Part="1" 
+AR Path="/580D7E0F/5F7FCEBF" Ref="C44"  Part="1" 
+AR Path="/580D992D/5F7FCEBF" Ref="C54"  Part="1" 
+AR Path="/580DA3EF/5F7FCEBF" Ref="C59"  Part="1" 
+AR Path="/580F02C3/5F7FCEBF" Ref="C79"  Part="1" 
+AR Path="/580F225D/5F7FCEBF" Ref="C?"  Part="1" 
+AR Path="/580FD905/5F7FCEBF" Ref="C?"  Part="1" 
+F 0 "C34" H 5875 1200 50  0000 L CNN
+F 1 "100nF" H 5875 1000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5888 950 50  0001 C CNN
+F 3 "" H 5850 1100 50  0000 C CNN
+	1    5850 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C68
+U 1 1 5F7FD120
+P 5550 1100
+AR Path="/580DB063/5F7FD120" Ref="C68"  Part="1" 
+AR Path="/580CC86A/5F7FD120" Ref="C33"  Part="1" 
+AR Path="/580D7E0F/5F7FD120" Ref="C43"  Part="1" 
+AR Path="/580D992D/5F7FD120" Ref="C53"  Part="1" 
+AR Path="/580DA3EF/5F7FD120" Ref="C58"  Part="1" 
+AR Path="/580F02C3/5F7FD120" Ref="C73"  Part="1" 
+AR Path="/580F225D/5F7FD120" Ref="C?"  Part="1" 
+AR Path="/580FD905/5F7FD120" Ref="C?"  Part="1" 
+F 0 "C33" H 5575 1200 50  0000 L CNN
+F 1 "100nF" H 5575 1000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5588 950 50  0001 C CNN
+F 3 "" H 5550 1100 50  0000 C CNN
+	1    5550 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0230
+U 1 1 5F7FD579
+P 5550 1250
+AR Path="/580DB063/5F7FD579" Ref="#PWR0230"  Part="1" 
+AR Path="/580CC86A/5F7FD579" Ref="#PWR0132"  Part="1" 
+AR Path="/580D7E0F/5F7FD579" Ref="#PWR0161"  Part="1" 
+AR Path="/580D992D/5F7FD579" Ref="#PWR0190"  Part="1" 
+AR Path="/580DA3EF/5F7FD579" Ref="#PWR0219"  Part="1" 
+AR Path="/580F02C3/5F7FD579" Ref="#PWR0241"  Part="1" 
+AR Path="/580F225D/5F7FD579" Ref="#PWR?"  Part="1" 
+AR Path="/580FD905/5F7FD579" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0241" H 5550 1000 50  0001 C CNN
+F 1 "GND" H 5550 1100 50  0000 C CNN
+F 2 "" H 5550 1250 50  0000 C CNN
+F 3 "" H 5550 1250 50  0000 C CNN
+	1    5550 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0231
+U 1 1 5F7FDAE2
+P 5850 1250
+AR Path="/580DB063/5F7FDAE2" Ref="#PWR0231"  Part="1" 
+AR Path="/580CC86A/5F7FDAE2" Ref="#PWR0133"  Part="1" 
+AR Path="/580D7E0F/5F7FDAE2" Ref="#PWR0162"  Part="1" 
+AR Path="/580D992D/5F7FDAE2" Ref="#PWR0191"  Part="1" 
+AR Path="/580DA3EF/5F7FDAE2" Ref="#PWR0220"  Part="1" 
+AR Path="/580F02C3/5F7FDAE2" Ref="#PWR0242"  Part="1" 
+AR Path="/580F225D/5F7FDAE2" Ref="#PWR?"  Part="1" 
+AR Path="/580FD905/5F7FDAE2" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0242" H 5850 1000 50  0001 C CNN
+F 1 "GND" H 5850 1100 50  0000 C CNN
+F 2 "" H 5850 1250 50  0000 C CNN
+F 3 "" H 5850 1250 50  0000 C CNN
+	1    5850 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0232
+U 1 1 5F7FDD70
+P 6150 1250
+AR Path="/580DB063/5F7FDD70" Ref="#PWR0232"  Part="1" 
+AR Path="/580CC86A/5F7FDD70" Ref="#PWR0134"  Part="1" 
+AR Path="/580D7E0F/5F7FDD70" Ref="#PWR0163"  Part="1" 
+AR Path="/580D992D/5F7FDD70" Ref="#PWR0192"  Part="1" 
+AR Path="/580DA3EF/5F7FDD70" Ref="#PWR0221"  Part="1" 
+AR Path="/580F02C3/5F7FDD70" Ref="#PWR0243"  Part="1" 
+AR Path="/580F225D/5F7FDD70" Ref="#PWR?"  Part="1" 
+AR Path="/580FD905/5F7FDD70" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0243" H 6150 1000 50  0001 C CNN
+F 1 "GND" H 6150 1100 50  0000 C CNN
+F 2 "" H 6150 1250 50  0000 C CNN
+F 3 "" H 6150 1250 50  0000 C CNN
+	1    6150 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 1100 6650 1100
+Wire Wire Line
+	6650 1100 6650 1000
+Wire Wire Line
+	6650 900  6750 900 
+Wire Wire Line
+	6750 1000 6650 1000
+Connection ~ 6650 1000
+Wire Wire Line
+	6650 1000 6650 900 
+Wire Wire Line
+	6650 900  6150 900 
+Wire Wire Line
+	5550 900  5550 950 
+Connection ~ 6650 900 
+Wire Wire Line
+	5850 950  5850 900 
+Connection ~ 5850 900 
+Wire Wire Line
+	5850 900  5550 900 
+Wire Wire Line
+	6150 950  6150 900 
+Connection ~ 6150 900 
+Wire Wire Line
+	6150 900  5850 900 
+Connection ~ 6650 1100
+Wire Wire Line
+	6650 1100 6650 1700
+Wire Wire Line
+	6750 1700 6650 1700
+$Comp
+L power:GND #PWR0233
+U 1 1 5F7F5457
+P 6650 2100
+AR Path="/580DB063/5F7F5457" Ref="#PWR0233"  Part="1" 
+AR Path="/580CC86A/5F7F5457" Ref="#PWR0135"  Part="1" 
+AR Path="/580D7E0F/5F7F5457" Ref="#PWR0164"  Part="1" 
+AR Path="/580D992D/5F7F5457" Ref="#PWR0193"  Part="1" 
+AR Path="/580DA3EF/5F7F5457" Ref="#PWR0222"  Part="1" 
+AR Path="/580F02C3/5F7F5457" Ref="#PWR0244"  Part="1" 
+AR Path="/580F225D/5F7F5457" Ref="#PWR?"  Part="1" 
+AR Path="/580FD905/5F7F5457" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0244" H 6650 1850 50  0001 C CNN
+F 1 "GND" H 6650 1950 50  0000 C CNN
+F 2 "" H 6650 2100 50  0000 C CNN
+F 3 "" H 6650 2100 50  0000 C CNN
+	1    6650 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C72
+U 1 1 5F7F434D
+P 6650 1950
+AR Path="/580DB063/5F7F434D" Ref="C72"  Part="1" 
+AR Path="/580CC86A/5F7F434D" Ref="C42"  Part="1" 
+AR Path="/580D7E0F/5F7F434D" Ref="C47"  Part="1" 
+AR Path="/580D992D/5F7F434D" Ref="C57"  Part="1" 
+AR Path="/580DA3EF/5F7F434D" Ref="C67"  Part="1" 
+AR Path="/580F02C3/5F7F434D" Ref="C82"  Part="1" 
+AR Path="/580F225D/5F7F434D" Ref="C?"  Part="1" 
+AR Path="/580FD905/5F7F434D" Ref="C?"  Part="1" 
+F 0 "C42" H 6675 2050 50  0000 L CNN
+F 1 "100nF" H 6675 1850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6688 1800 50  0001 C CNN
+F 3 "" H 6650 1950 50  0000 C CNN
+	1    6650 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 1800 6650 1700
+Connection ~ 6650 1700
+$Comp
+L Device:R R?
+U 1 1 5F81A520
+P 6600 2650
+AR Path="/5F81A520" Ref="R?"  Part="1" 
+AR Path="/580CC86A/5F81A520" Ref="R18"  Part="1" 
+AR Path="/580D7E0F/5F81A520" Ref="R19"  Part="1" 
+AR Path="/580D992D/5F81A520" Ref="R20"  Part="1" 
+AR Path="/580DA3EF/5F81A520" Ref="R31"  Part="1" 
+AR Path="/580DB063/5F81A520" Ref="R32"  Part="1" 
+AR Path="/580F02C3/5F81A520" Ref="R33"  Part="1" 
+F 0 "R18" V 6680 2650 50  0000 C CNN
+F 1 "10k" V 6600 2650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6530 2650 50  0001 C CNN
+F 3 "" H 6600 2650 50  0000 C CNN
+F 4 "https://www.digikey.com/products/en?keywords=311-10.0KHRDKR-ND" V 6600 2650 50  0001 C CNN "Field4"
+	1    6600 2650
+	1    0    0    -1  
+$EndComp
+Text Label 5900 2450 0    60   ~ 0
+3V3_SOCKET
+Wire Wire Line
+	6750 2900 6600 2900
+Wire Wire Line
+	6600 2900 6600 2800
+Wire Wire Line
+	5900 2450 6600 2450
+Wire Wire Line
+	6600 2450 6600 2500
+Wire Wire Line
+	6600 2900 5900 2900
+Connection ~ 6600 2900
+Text Label 5900 2900 0    60   ~ 0
+nRESET
+$Comp
+L power:GND #PWR0234
+U 1 1 5F82C726
+P 8300 4100
+AR Path="/580DB063/5F82C726" Ref="#PWR0234"  Part="1" 
+AR Path="/580CC86A/5F82C726" Ref="#PWR0136"  Part="1" 
+AR Path="/580D7E0F/5F82C726" Ref="#PWR0165"  Part="1" 
+AR Path="/580D992D/5F82C726" Ref="#PWR0194"  Part="1" 
+AR Path="/580DA3EF/5F82C726" Ref="#PWR0223"  Part="1" 
+AR Path="/580F02C3/5F82C726" Ref="#PWR0245"  Part="1" 
+AR Path="/580F225D/5F82C726" Ref="#PWR?"  Part="1" 
+AR Path="/580FD905/5F82C726" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0245" H 8300 3850 50  0001 C CNN
+F 1 "GND" H 8300 3950 50  0000 C CNN
+F 2 "" H 8300 4100 50  0000 C CNN
+F 3 "" H 8300 4100 50  0000 C CNN
+	1    8300 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0235
+U 1 1 5F82CE44
+P 8400 4100
+AR Path="/580DB063/5F82CE44" Ref="#PWR0235"  Part="1" 
+AR Path="/580CC86A/5F82CE44" Ref="#PWR0137"  Part="1" 
+AR Path="/580D7E0F/5F82CE44" Ref="#PWR0166"  Part="1" 
+AR Path="/580D992D/5F82CE44" Ref="#PWR0195"  Part="1" 
+AR Path="/580DA3EF/5F82CE44" Ref="#PWR0224"  Part="1" 
+AR Path="/580F02C3/5F82CE44" Ref="#PWR0246"  Part="1" 
+AR Path="/580F225D/5F82CE44" Ref="#PWR?"  Part="1" 
+AR Path="/580FD905/5F82CE44" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0246" H 8400 3850 50  0001 C CNN
+F 1 "GND" H 8400 3950 50  0000 C CNN
+F 2 "" H 8400 4100 50  0000 C CNN
+F 3 "" H 8400 4100 50  0000 C CNN
+	1    8400 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0236
+U 1 1 5F82CFE9
+P 8500 4100
+AR Path="/580DB063/5F82CFE9" Ref="#PWR0236"  Part="1" 
+AR Path="/580CC86A/5F82CFE9" Ref="#PWR0138"  Part="1" 
+AR Path="/580D7E0F/5F82CFE9" Ref="#PWR0167"  Part="1" 
+AR Path="/580D992D/5F82CFE9" Ref="#PWR0196"  Part="1" 
+AR Path="/580DA3EF/5F82CFE9" Ref="#PWR0225"  Part="1" 
+AR Path="/580F02C3/5F82CFE9" Ref="#PWR0247"  Part="1" 
+AR Path="/580F225D/5F82CFE9" Ref="#PWR?"  Part="1" 
+AR Path="/580FD905/5F82CFE9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0247" H 8500 3850 50  0001 C CNN
+F 1 "GND" H 8500 3950 50  0000 C CNN
+F 2 "" H 8500 4100 50  0000 C CNN
+F 3 "" H 8500 4100 50  0000 C CNN
+	1    8500 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0237
+U 1 1 5F82D196
+P 8600 4100
+AR Path="/580DB063/5F82D196" Ref="#PWR0237"  Part="1" 
+AR Path="/580CC86A/5F82D196" Ref="#PWR0139"  Part="1" 
+AR Path="/580D7E0F/5F82D196" Ref="#PWR0168"  Part="1" 
+AR Path="/580D992D/5F82D196" Ref="#PWR0197"  Part="1" 
+AR Path="/580DA3EF/5F82D196" Ref="#PWR0226"  Part="1" 
+AR Path="/580F02C3/5F82D196" Ref="#PWR0248"  Part="1" 
+AR Path="/580F225D/5F82D196" Ref="#PWR?"  Part="1" 
+AR Path="/580FD905/5F82D196" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0248" H 8600 3850 50  0001 C CNN
+F 1 "GND" H 8600 3950 50  0000 C CNN
+F 2 "" H 8600 4100 50  0000 C CNN
+F 3 "" H 8600 4100 50  0000 C CNN
+	1    8600 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0238
+U 1 1 5F82DA92
+P 8850 4100
+AR Path="/580DB063/5F82DA92" Ref="#PWR0238"  Part="1" 
+AR Path="/580CC86A/5F82DA92" Ref="#PWR0140"  Part="1" 
+AR Path="/580D7E0F/5F82DA92" Ref="#PWR0169"  Part="1" 
+AR Path="/580D992D/5F82DA92" Ref="#PWR0198"  Part="1" 
+AR Path="/580DA3EF/5F82DA92" Ref="#PWR0227"  Part="1" 
+AR Path="/580F02C3/5F82DA92" Ref="#PWR0249"  Part="1" 
+AR Path="/580F225D/5F82DA92" Ref="#PWR?"  Part="1" 
+AR Path="/580FD905/5F82DA92" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0249" H 8850 3850 50  0001 C CNN
+F 1 "GND" H 8850 3950 50  0000 C CNN
+F 2 "" H 8850 4100 50  0000 C CNN
+F 3 "" H 8850 4100 50  0000 C CNN
+	1    8850 4100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 10450 900 
+NoConn ~ 10450 1000
+NoConn ~ 10450 1100
+NoConn ~ 10450 1200
+NoConn ~ 10450 1300
+NoConn ~ 10450 1400
+NoConn ~ 10450 1500
+NoConn ~ 10450 1600
+NoConn ~ 10450 1700
+NoConn ~ 10450 1800
+NoConn ~ 10450 1900
+NoConn ~ 10450 2000
+NoConn ~ 10450 2100
+NoConn ~ 10450 2200
+NoConn ~ 10450 2300
+NoConn ~ 10450 2400
+NoConn ~ 10450 2500
+NoConn ~ 10450 2600
+NoConn ~ 10450 2700
+NoConn ~ 10450 2800
+NoConn ~ 10450 2900
+NoConn ~ 10450 3000
+NoConn ~ 10450 3100
+NoConn ~ 10450 3200
+NoConn ~ 10450 3300
+NoConn ~ 10450 3400
+NoConn ~ 10450 3500
+NoConn ~ 10450 3600
+NoConn ~ 6750 3100
+NoConn ~ 6750 3200
+NoConn ~ 6750 3300
+NoConn ~ 6750 3400
+NoConn ~ 6750 3500
+NoConn ~ 6750 3600
+NoConn ~ 6750 3700
+NoConn ~ 6750 3800
+Wire Wire Line
+	10450 3800 11000 3800
+Wire Wire Line
+	10450 3700 11000 3700
+Text Label 11000 3700 2    60   ~ 0
+SWCLK
+Text Label 11000 3800 2    60   ~ 0
+SWDIO
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_20 J1
+U 1 1 5F8A4014
+P 7400 5300
+AR Path="/580CC86A/5F8A4014" Ref="J1"  Part="1" 
+AR Path="/580D7E0F/5F8A4014" Ref="J2"  Part="1" 
+AR Path="/580D992D/5F8A4014" Ref="J3"  Part="1" 
+AR Path="/580DA3EF/5F8A4014" Ref="J4"  Part="1" 
+AR Path="/580DB063/5F8A4014" Ref="J5"  Part="1" 
+AR Path="/580F02C3/5F8A4014" Ref="J6"  Part="1" 
+F 0 "J1" H 7850 6050 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_20" H 8400 4550 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x10_P2.54mm_Vertical" H 7850 4250 50  0001 L TNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.dui0499b/DUI0499B_system_design_reference.pdf" V 7050 4050 50  0001 C CNN
+	1    7400 5300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8000 4800
+Wire Wire Line
+	8000 4900 8500 4900
+Text Label 8500 4900 2    60   ~ 0
+nRESET
+NoConn ~ 8000 5100
+Text Label 10450 5200 2    60   ~ 0
+SWCLK
+Text Label 10450 5300 2    60   ~ 0
+SWDIO
+Wire Wire Line
+	10450 5300 9950 5300
+Wire Wire Line
+	9950 5200 10450 5200
+NoConn ~ 8000 5400
+NoConn ~ 8000 5500
+NoConn ~ 8000 5700
+NoConn ~ 8000 5800
+$Comp
+L power:GND #PWR0239
+U 1 1 5F8DB5E9
+P 7300 6100
+AR Path="/580DB063/5F8DB5E9" Ref="#PWR0239"  Part="1" 
+AR Path="/580CC86A/5F8DB5E9" Ref="#PWR0159"  Part="1" 
+AR Path="/580D7E0F/5F8DB5E9" Ref="#PWR0188"  Part="1" 
+AR Path="/580D992D/5F8DB5E9" Ref="#PWR0217"  Part="1" 
+AR Path="/580DA3EF/5F8DB5E9" Ref="#PWR0228"  Part="1" 
+AR Path="/580F02C3/5F8DB5E9" Ref="#PWR0250"  Part="1" 
+AR Path="/580F225D/5F8DB5E9" Ref="#PWR?"  Part="1" 
+AR Path="/580FD905/5F8DB5E9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0250" H 7300 5850 50  0001 C CNN
+F 1 "GND" H 7300 5950 50  0000 C CNN
+F 2 "" H 7300 6100 50  0000 C CNN
+F 3 "" H 7300 6100 50  0000 C CNN
+	1    7300 6100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7300 4500
+NoConn ~ 7400 4500
+Text Notes 7150 4450 0    60   ~ 0
+NOT USED
+$Comp
+L mini_ble:SN74LVC2G66DCUR U30
+U 1 1 5F8FFC3C
+P 9650 5250
+AR Path="/580CC86A/5F8FFC3C" Ref="U30"  Part="1" 
+AR Path="/580D7E0F/5F8FFC3C" Ref="U31"  Part="1" 
+AR Path="/580D992D/5F8FFC3C" Ref="U33"  Part="1" 
+AR Path="/580DA3EF/5F8FFC3C" Ref="U34"  Part="1" 
+AR Path="/580DB063/5F8FFC3C" Ref="U35"  Part="1" 
+AR Path="/580F02C3/5F8FFC3C" Ref="U36"  Part="1" 
+F 0 "U30" H 9650 5647 60  0000 C CNN
+F 1 "SN74LVC2G66DCTR" H 9650 5541 60  0000 C CNN
+F 2 "Package_SO:SSOP-8_2.95x2.8mm_P0.65mm" H 9250 5450 60  0001 C CNN
+F 3 "" H 9250 5450 60  0001 C CNN
+F 4 "https://www.digikey.com/product-detail/en/texas-instruments/SN74LVC2G66DCTR/296-13271-1-ND/484496" H 9650 5250 50  0001 C CNN "Field4"
+	1    9650 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0267
+U 1 1 5F91A9E3
+P 10050 5500
+AR Path="/580DB063/5F91A9E3" Ref="#PWR0267"  Part="1" 
+AR Path="/580CC86A/5F91A9E3" Ref="#PWR0251"  Part="1" 
+AR Path="/580D7E0F/5F91A9E3" Ref="#PWR0255"  Part="1" 
+AR Path="/580D992D/5F91A9E3" Ref="#PWR0259"  Part="1" 
+AR Path="/580DA3EF/5F91A9E3" Ref="#PWR0263"  Part="1" 
+AR Path="/580F02C3/5F91A9E3" Ref="#PWR0271"  Part="1" 
+AR Path="/580F225D/5F91A9E3" Ref="#PWR?"  Part="1" 
+AR Path="/580FD905/5F91A9E3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0271" H 10050 5250 50  0001 C CNN
+F 1 "GND" H 10050 5350 50  0000 C CNN
+F 2 "" H 10050 5500 50  0000 C CNN
+F 3 "" H 10050 5500 50  0000 C CNN
+	1    10050 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 5400 10050 5400
+Wire Wire Line
+	10050 5400 10050 5500
+$Comp
+L Device:R R72
+U 1 1 5F91E8CC
+P 8500 5200
+AR Path="/580DB063/5F91E8CC" Ref="R72"  Part="1" 
+AR Path="/580CC86A/5F91E8CC" Ref="R44"  Part="1" 
+AR Path="/580D7E0F/5F91E8CC" Ref="R46"  Part="1" 
+AR Path="/580D992D/5F91E8CC" Ref="R58"  Part="1" 
+AR Path="/580DA3EF/5F91E8CC" Ref="R70"  Part="1" 
+AR Path="/580F02C3/5F91E8CC" Ref="R84"  Part="1" 
+AR Path="/580F225D/5F91E8CC" Ref="R?"  Part="1" 
+AR Path="/580FD905/5F91E8CC" Ref="R?"  Part="1" 
+F 0 "R44" V 8580 5200 50  0000 C CNN
+F 1 "50" V 8500 5200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8430 5200 50  0001 C CNN
+F 3 "" H 8500 5200 50  0000 C CNN
+F 4 "https://www.digikey.com/product-detail/en/yageo/RC0603JR-0751RL/311-51GRCT-ND/729750" V 8500 5200 50  0001 C CNN "Field4"
+	1    8500 5200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R83
+U 1 1 5F92D69A
+P 8500 5300
+AR Path="/580DB063/5F92D69A" Ref="R83"  Part="1" 
+AR Path="/580CC86A/5F92D69A" Ref="R45"  Part="1" 
+AR Path="/580D7E0F/5F92D69A" Ref="R57"  Part="1" 
+AR Path="/580D992D/5F92D69A" Ref="R59"  Part="1" 
+AR Path="/580DA3EF/5F92D69A" Ref="R71"  Part="1" 
+AR Path="/580F02C3/5F92D69A" Ref="R85"  Part="1" 
+AR Path="/580F225D/5F92D69A" Ref="R?"  Part="1" 
+AR Path="/580FD905/5F92D69A" Ref="R?"  Part="1" 
+F 0 "R45" V 8580 5300 50  0000 C CNN
+F 1 "50" V 8500 5300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8430 5300 50  0001 C CNN
+F 3 "" H 8500 5300 50  0000 C CNN
+F 4 "https://www.digikey.com/product-detail/en/yageo/RC0603JR-0751RL/311-51GRCT-ND/729750" V 8500 5300 50  0001 C CNN "Field4"
+	1    8500 5300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8650 5300 9350 5300
+Wire Wire Line
+	9350 5200 8650 5200
+Wire Wire Line
+	8350 5200 8000 5200
+Wire Wire Line
+	8000 5300 8350 5300
+Text Label 8750 5100 0    60   ~ 0
+PSU_EN
+Wire Wire Line
+	9350 5100 9250 5100
+Wire Wire Line
+	9350 5400 9250 5400
+Wire Wire Line
+	9250 5400 9250 5100
+Connection ~ 9250 5100
+Wire Wire Line
+	9250 5100 8750 5100
+$Comp
+L power:+5V #PWR0268
+U 1 1 5F95A8E6
+P 10150 4950
+AR Path="/580DB063/5F95A8E6" Ref="#PWR0268"  Part="1" 
+AR Path="/580CC86A/5F95A8E6" Ref="#PWR0252"  Part="1" 
+AR Path="/580D7E0F/5F95A8E6" Ref="#PWR0256"  Part="1" 
+AR Path="/580D992D/5F95A8E6" Ref="#PWR0260"  Part="1" 
+AR Path="/580DA3EF/5F95A8E6" Ref="#PWR0264"  Part="1" 
+AR Path="/580F02C3/5F95A8E6" Ref="#PWR0272"  Part="1" 
+AR Path="/580F225D/5F95A8E6" Ref="#PWR?"  Part="1" 
+AR Path="/580FD905/5F95A8E6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0272" H 10150 4800 50  0001 C CNN
+F 1 "+5V" H 10150 5090 50  0000 C CNN
+F 2 "" H 10150 4950 50  0000 C CNN
+F 3 "" H 10150 4950 50  0000 C CNN
+	1    10150 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 5100 10150 5100
+Wire Wire Line
+	10150 5100 10150 4950
+$Comp
+L Device:C C92
+U 1 1 5F960C24
+P 10750 5200
+AR Path="/580DB063/5F960C24" Ref="C92"  Part="1" 
+AR Path="/580CC86A/5F960C24" Ref="C83"  Part="1" 
+AR Path="/580D7E0F/5F960C24" Ref="C84"  Part="1" 
+AR Path="/580D992D/5F960C24" Ref="C85"  Part="1" 
+AR Path="/580DA3EF/5F960C24" Ref="C86"  Part="1" 
+AR Path="/580F02C3/5F960C24" Ref="C93"  Part="1" 
+AR Path="/580F225D/5F960C24" Ref="C?"  Part="1" 
+AR Path="/580FD905/5F960C24" Ref="C?"  Part="1" 
+F 0 "C83" H 10775 5300 50  0000 L CNN
+F 1 "100nF" H 10775 5100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10788 5050 50  0001 C CNN
+F 3 "" H 10750 5200 50  0000 C CNN
+F 4 "https://www.digikey.com/products/en?keywords=%201276-1000-1-ND%20" H 10750 5200 50  0001 C CNN "Field4"
+	1    10750 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0269
+U 1 1 5F960C2A
+P 10750 5400
+AR Path="/580DB063/5F960C2A" Ref="#PWR0269"  Part="1" 
+AR Path="/580CC86A/5F960C2A" Ref="#PWR0253"  Part="1" 
+AR Path="/580D7E0F/5F960C2A" Ref="#PWR0257"  Part="1" 
+AR Path="/580D992D/5F960C2A" Ref="#PWR0261"  Part="1" 
+AR Path="/580DA3EF/5F960C2A" Ref="#PWR0265"  Part="1" 
+AR Path="/580F02C3/5F960C2A" Ref="#PWR0273"  Part="1" 
+AR Path="/580F225D/5F960C2A" Ref="#PWR?"  Part="1" 
+AR Path="/580FD905/5F960C2A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0273" H 10750 5150 50  0001 C CNN
+F 1 "GND" H 10750 5250 50  0000 C CNN
+F 2 "" H 10750 5400 50  0000 C CNN
+F 3 "" H 10750 5400 50  0000 C CNN
+	1    10750 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0270
+U 1 1 5F960C30
+P 10750 5000
+AR Path="/580DB063/5F960C30" Ref="#PWR0270"  Part="1" 
+AR Path="/580CC86A/5F960C30" Ref="#PWR0254"  Part="1" 
+AR Path="/580D7E0F/5F960C30" Ref="#PWR0258"  Part="1" 
+AR Path="/580D992D/5F960C30" Ref="#PWR0262"  Part="1" 
+AR Path="/580DA3EF/5F960C30" Ref="#PWR0266"  Part="1" 
+AR Path="/580F02C3/5F960C30" Ref="#PWR0274"  Part="1" 
+AR Path="/580F225D/5F960C30" Ref="#PWR?"  Part="1" 
+AR Path="/580FD905/5F960C30" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0274" H 10750 4850 50  0001 C CNN
+F 1 "+5V" H 10750 5140 50  0000 C CNN
+F 2 "" H 10750 5000 50  0000 C CNN
+F 3 "" H 10750 5000 50  0000 C CNN
+	1    10750 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10750 5000 10750 5050
+Wire Wire Line
+	10750 5400 10750 5350
+$EndSCHEMATC
